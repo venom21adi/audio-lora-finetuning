@@ -310,11 +310,9 @@ All scripts and configurations are available in the main repository:
 
 ---
 
-## Appendix A: Full Training Logs
 
-*[Placeholder: If logs are recovered, include them here]*
 
-## Appendix B: Example Annotations
+## Appendix A: Example Annotations
 
 ```json
 {
@@ -331,6 +329,7 @@ All scripts and configurations are available in the main repository:
   "complexity_score": "Moderate complexity"
 }
 ```
+## Appendix B: Infrastructure Cost
 
 | Service | Cost |
 |--------|----------------|

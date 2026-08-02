@@ -38,11 +38,6 @@ These descriptors were consistent across all 51 clips, ensuring the model learne
 
 DoRA (Weight-Decomposed Low-Rank Adaptation) adds magnitude scaling to standard LoRA. This helps capture **timbre nuances** that are critical for instruments like tabla — where the bass/treble distinction is essential.
 
-**DoRA parameters:**
-- Rank: 128
-- Alpha: 240
-- Trainable params: ~164M
-
 ### min_snr Loss Weighting
 
 Base models are sensitive to noise. `min_snr` loss weighting stabilizes training by dynamically adjusting the loss contribution of each timestep. This prevented overfitting and mode collapse.

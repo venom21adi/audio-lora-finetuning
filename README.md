@@ -32,8 +32,8 @@ Key Visual Proof:
 
 <table>
   <tr>
-    <td><img src="docs/case_studies/tabla/results/tabla/images/spectrogram_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
-    <td><img src="docs/case_studies/tabla/results/tabla/images/spectrogram_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
+    <td><img src="docs/case_studies/tabla/results/spectrogram_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
+    <td><img src="docs/case_studies/tabla/results/spectrogram_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
   </tr>
 </table>
 

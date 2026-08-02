@@ -65,7 +65,7 @@ Key Visual Proof:
 [▶️ Before Audio](docs/case_studies/tabla/results/prompt_1_sample_1_before.mp3)
 
 **After (Fine-Tuned):**
-[▶️ After Audio](c/prompt_1_sample_1_after.mp3)
+[▶️ After Audio](docs/case_studies/tabla/results/prompt_1_sample_1_after.mp3)
 
 > 💡 **Tip:** Download the files to your local machine for the best listening experience. 
 > The difference is most noticeable in the bayan (bass) and dayan (treble) separation.

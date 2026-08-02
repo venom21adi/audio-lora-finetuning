@@ -19,7 +19,7 @@ This repository documents the methodology, infrastructure, and results of fine-t
 | Reproducibility | Documented pipeline + configs |
 | Resource constraints | Optimized for RTX 3090 (24GB) |
 
-# 🎵 Case Study: Tabla (Completed)
+## 🎵 Case Study: Tabla (Completed)
 We successfully fine-tuned ACE-Step 1.5 to generate recognizable tabla using a highly efficient approach.
 
 Data: 51 carefully curated clips (30-45s) from 1.5 hours of raw audio.
@@ -69,8 +69,10 @@ Key Visual Proof:
 
 > 💡 **Tip:** Download the files to your local machine for the best listening experience. 
 > The difference is most noticeable in the bayan (bass) and dayan (treble) separation.
-> The Prompts used can be found at [Prompts](docs/case_studies/tabla/prompts.md)
-> Rest of the files are at [Results](docs/case_studies/tabla/results)
+
+**All prompts used for evaluation can be found in [prompts.md](docs/case_studies/tabla/prompts.md). **
+** Rest of the files are at [Results](docs/case_studies/tabla/results) **
+
 
 
 ## Technical Stack
@@ -107,6 +109,14 @@ Every case study includes:
 - `scripts/` — annotation, analysis
 - `docs/case_studies/instrument` — methodology and infrastructure
 - `docs/case_studies/instrument/results` — results, analysis reports, samples.
+
+## 🚀 What's Next
+
+The same methodology will be applied to new instruments:
+- **Bansuri (flute)** — Currently in data collection
+- **Sitar** — Requires stem separation (tabla + sitar recordings)
+- **Shehnai** — Requires stem separation
+- **Tanpura** — Drone, separate training
 
 
 

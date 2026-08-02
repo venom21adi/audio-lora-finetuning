@@ -44,19 +44,15 @@ This repository documents the methodology, infrastructure, and results of fine-t
 | Timbre Accuracy | Generic percussion | Tabla-specific (bayan/dayan) | Qualitative |
 | Trigger Word | None | `tablastyle` | Enables style control |
 
-### Sample Output
-
-
 ## Project Structure
 
 See [docs/methodology.md] for detailed walkthroughs.
 
-## Reproducibility
-
 Every case study includes:
-- `configs/<instrument>.yaml` — exact hyperparameters
+- `configs/<instrument>.yaml` 
 - `scripts/` — annotation, analysis
 - `docs/case_studies/instrument` — methodology and infrastructure
+- `docs/case_studies/instrument/results` — results, analysis reports, samples.
 
 ## License
 

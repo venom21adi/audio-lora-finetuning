@@ -198,7 +198,32 @@ Prompt: "tablastyle, fast tabla solo with energetic strokes"
 - Authentic rhythmic phrasing
 - Consistent quality across generations
 
-### 4.3 Spectrogram Analysis
+### 4.3 Quantitative Spectral Analysis
+
+A detailed analysis of 10 before/after samples (30 seconds each) confirmed the model's improvement:
+
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Spectral Centroid | 2566 Hz | 1682 Hz | ↓ 34.4% |
+| Spectral Rolloff | 5498 Hz | 3455 Hz | ↓ 37.2% |
+| Spectral Bandwidth | 2658 Hz | 2160 Hz | ↓ 18.7% |
+| Tempo | 124 BPM | 134 BPM | ↑ 8.1% |
+| Onset Density | 4.88/s | 6.35/s | ↑ 30.1% |
+| Zero Crossing Rate | 0.0843 | 0.0622 | ↓ 26.2% |
+| RMS Energy | 0.0729 | 0.0405 | ↓ 44.4% |
+
+**Frequency Band Energy:**
+| Band | Before | After | Change |
+|------|--------|-------|--------|
+| Bayan (100-300Hz) | 65.81 | 49.61 | ↓ 24.6% |
+| Dayan (2-6kHz) | 98.22 | 38.82 | ↓ 60.5% |
+| High (6-10kHz) | 78.69 | 22.28 | ↓ 71.7% |
+
+**Interpretation:**
+- **Lower spectral centroid** → darker, more focused timbre (closer to tabla)
+- **Higher onset density** → more percussive attacks (tabla strokes)
+- **Drop in high-frequency energy** → removal of noise, cleaner tabla sound
+- **Bayan/Dayan separation** → model learned distinct frequency bands
 
 <table>
   <tr>
@@ -206,6 +231,7 @@ Prompt: "tablastyle, fast tabla solo with energetic strokes"
     <td><img src="results/spectrogram_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
   </tr>
 </table>
+
 
 **Key differences:**
 - **Transient response:** Sharp attack peaks (tabla strokes)

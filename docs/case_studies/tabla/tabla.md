@@ -179,6 +179,8 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is an evolution of LoRA:
 
 The loss reduction indicates that the model learned to generate tabla-specific audio rather than generic percussion.
 
+Loss: 0.5765 → 0.2173 (-62.3%) over 100 epochs. (Granular per-epoch logs weren't preserved after the training pod was decommissioned; the table above reflects the best available record at the time.)
+
 ### 4.2 Qualitative: Before vs After
 
 **Same prompt, same seed:**

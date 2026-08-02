@@ -46,13 +46,16 @@ This repository documents the methodology, infrastructure, and results of fine-t
 
 ## Project Structure
 
-See [docs/methodology.md] for detailed walkthroughs.
+See [docs/methodology.md](docs/methodology.md) for detailed walkthroughs.
 
 Every case study includes:
 - `configs/<instrument>.yaml` 
 - `scripts/` — annotation, analysis
 - `docs/case_studies/instrument` — methodology and infrastructure
 - `docs/case_studies/instrument/results` — results, analysis reports, samples.
+
+## Sample Audio
+<audio></audio>
 
 ## License
 

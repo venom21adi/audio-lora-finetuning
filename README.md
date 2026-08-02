@@ -19,7 +19,7 @@ This repository documents the methodology, infrastructure, and results of fine-t
 | Reproducibility | Documented pipeline + configs |
 | Resource constraints | Optimized for RTX 3090 (24GB) |
 
-🎵 Case Study: Tabla (Completed)
+# 🎵 Case Study: Tabla (Completed)
 We successfully fine-tuned ACE-Step 1.5 to generate recognizable tabla using a highly efficient approach.
 
 Data: 51 carefully curated clips (30-45s) from 1.5 hours of raw audio.

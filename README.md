@@ -22,7 +22,7 @@ This repository documents the methodology, infrastructure, and results of fine-t
 ## Technical Stack
 
 - **Model:** ACE-Step 1.5 (4B DiT) — `acestep-v15-base`
-- **Adapter:** DoRA (rank 128, alpha 256)
+- **Adapter:** DoRA (rank 128, alpha 240)
 - **Framework:** Side-Step (corrected timestep sampling + CFG dropout)
 - **Infrastructure:** RunPod (RTX 3090, 24GB VRAM)
 - **Data Tools:** Custom annotation CLI, Demucs for stem separation

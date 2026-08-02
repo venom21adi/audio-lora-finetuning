@@ -56,9 +56,20 @@ Key Visual Proof:
   <em>Figure 1: Average frequency spectrum before vs after fine-tuning</em>
 </p>
 
+# Full Case Study
+
 [Read the full Tabla Case Study →](docs/case_studies/tabla/tabla.md)
 
+## Sample Audio
+**Before (Base Model):**
+[▶️ Before Audio](results/tabla/audio/before/prompt_1_sample_1_before.mp3)
 
+**After (Fine-Tuned):**
+[▶️ After Audio](results/tabla/audio/after/prompt_1_sample_1_after.mp3)
+
+> 💡 **Tip:** Download the files to your local machine for the best listening experience. 
+> The difference is most noticeable in the bayan (bass) and dayan (treble) separation.
+> The Prompts used can be found at [Prompts](docs/case_studies/tabla/prompts.md)
 
 ## Technical Stack
 
@@ -95,8 +106,7 @@ Every case study includes:
 - `docs/case_studies/instrument` — methodology and infrastructure
 - `docs/case_studies/instrument/results` — results, analysis reports, samples.
 
-## Sample Audio
-<audio></audio>
+
 
 ## License
 

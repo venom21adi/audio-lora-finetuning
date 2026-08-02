@@ -45,11 +45,11 @@ This repository documents the methodology, infrastructure, and results of fine-t
 | Trigger Word | None | `tablastyle` | Enables style control |
 
 ### Sample Output
-[Audio links + spectrograms]
+
 
 ## Project Structure
 
-See [docs/methodology/](docs/methodology/) for detailed walkthroughs.
+See [docs/methodology.md] for detailed walkthroughs.
 
 ## Reproducibility
 

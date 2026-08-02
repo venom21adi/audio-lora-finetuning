@@ -30,6 +30,8 @@ Result: 62.3% loss reduction and clear timbre separation (bayan/dayan).
 
 Key Visual Proof:
 
+# Spectogram
+
 <table>
   <tr>
     <td><img src="docs/case_studies/tabla/results/spectrogram_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
@@ -37,6 +39,22 @@ Key Visual Proof:
   </tr>
 </table>
 
+# Waveform
+
+<table>
+  <tr>
+    <td><img src="docs/case_studies/tabla/results/waveform_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
+    <td><img src="docs/case_studies/tabla/results/waveform_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
+  </tr>
+</table>
+
+# Frequency Spectrum 
+<!-- Image with a caption -->
+<p align="center">
+  <img src="docs/case_studies/tabla/results/frequency_spectrum_comparison.png" alt="Frequency Spectrum Comparison" width="700"/>
+  <br>
+  <em>Figure 1: Average frequency spectrum before vs after fine-tuning</em>
+</p>
 
 [Read the full Tabla Case Study →](docs/case_studies/tabla/tabla.md)
 

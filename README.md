@@ -30,7 +30,7 @@ Result: 62.3% loss reduction and clear timbre separation (bayan/dayan).
 
 Key Visual Proof:
 
-# Spectogram
+## Spectogram
 
 <table>
   <tr>
@@ -39,7 +39,7 @@ Key Visual Proof:
   </tr>
 </table>
 
-# Waveform
+## Waveform
 
 <table>
   <tr>
@@ -48,7 +48,7 @@ Key Visual Proof:
   </tr>
 </table>
 
-# Frequency Spectrum 
+## Frequency Spectrum 
 <!-- Image with a caption -->
 <p align="center">
   <img src="docs/case_studies/tabla/results/frequency_spectrum_comparison.png" alt="Frequency Spectrum Comparison" width="700"/>
@@ -56,16 +56,16 @@ Key Visual Proof:
   <em>Figure 1: Average frequency spectrum before vs after fine-tuning</em>
 </p>
 
-# Full Case Study
+## Full Case Study
 
 [Read the full Tabla Case Study →](docs/case_studies/tabla/tabla.md)
 
 ## Sample Audio
 **Before (Base Model):**
-[▶️ Before Audio](results/tabla/audio/before/prompt_1_sample_1_before.mp3)
+[▶️ Before Audio](docs/case_studies/tabla/results/prompt_1_sample_1_before.mp3)
 
 **After (Fine-Tuned):**
-[▶️ After Audio](results/tabla/audio/after/prompt_1_sample_1_after.mp3)
+[▶️ After Audio](docs/case_studies/tabla/results/prompt_1_sample_1_after.mp3)
 
 > 💡 **Tip:** Download the files to your local machine for the best listening experience. 
 > The difference is most noticeable in the bayan (bass) and dayan (treble) separation.

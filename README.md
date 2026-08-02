@@ -31,10 +31,10 @@ This repository documents the methodology, infrastructure, and results of fine-t
 ## Key Technical Contributions
 
 1. **Data Curation Pipeline** — From raw recordings to annotated, preprocessed tensors
-2. **Annotation Framework** — Structured descriptors (tempo, energy, texture, stroke type, complexity) for consistent captioning
+2. **Annotation Framework** — Structured descriptors (tempo, energy) for consistent captioning
 3. **Training Optimization** — DoRA + min_snr loss + CFG dropout = stable, high-quality learning
 4. **Infrastructure as Code** — Reproducible RunPod setup with UV and Side-Step
-5. **Comparative Analysis** — Before/after spectrograms, loss curves, timbre analysis
+5. **Comparative Analysis** — Before/after spectrograms and other relevant metrics
 
 ## Results (Tabla Case Study)
 
@@ -55,9 +55,8 @@ See [docs/methodology/](docs/methodology/) for detailed walkthroughs.
 
 Every case study includes:
 - `configs/<instrument>.yaml` — exact hyperparameters
-- `results/<instrument>/logs/` — training logs (when available)
-- `scripts/` — data prep, training, inference, analysis
-- `docs/infrastructure/` — RunPod setup, cost tracking
+- `scripts/` — annotation, analysis
+- `docs/case_studies/instrument` — methodology and infrastructure
 
 ## License
 

@@ -1,0 +1,40 @@
+# Model
+model: acestep-v15-base
+checkpoint_dir: /workspace/ACE-Step-1.5/checkpoints
+
+# Adapter (DoRA)
+adapter_type: dora
+rank: 128
+alpha: 256
+
+# Training
+epochs: 100
+batch_size: 2
+gradient_accumulation: 2
+learning_rate: 0.0003
+warmup_steps: 100
+optimizer: adamw8bit
+
+# Data
+dataset_path: /workspace/tabla_for_runpod
+audio_dir: /workspace/tabla_for_runpod/audio
+dataset_json: /workspace/tabla_for_runpod/dataset.json
+trigger_word: tablastyle
+tag_position: prepend
+
+# Preprocessing
+normalize: peak
+peak_target: -1.0
+genre_ratio: 0
+max_duration: 45  # auto-detected
+
+# Training-specific
+loss_weighting: min_snr
+snr_gamma: 5.0
+cfg_dropout_ratio: 0.15
+checkpoint_every: 10
+
+# Hardware
+device: cuda:0
+attn: flash_attention_2
+dtype: bfloat16

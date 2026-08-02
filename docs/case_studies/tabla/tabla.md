@@ -51,9 +51,6 @@ I built a custom annotation tool that guided me through 5 descriptors for each c
 |------------|---------|----------------|
 | **Tempo** | Very slow → Very fast | Controls generation speed and feel |
 | **Energy** | Calm → Intense | Affects dynamics and attack |
-| **Texture** | Bass-focused → Mixed → Complex | Maps to bayan/dayan balance |
-| **Stroke Type** | Bass → Treble → Mixed → Rolls | Defines playing technique |
-| **Complexity** | Simple → Virtuosic | Captures rhythmic intricacy |
 
 **Example annotation:**
 
@@ -109,7 +106,7 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is an evolution of LoRA:
 
 **Parameters:**
 - Rank: 128
-- Alpha: 256
+- Alpha: 240
 - Trainable params: ~164M (313 MB in FP32)
 - VRAM overhead: ~2.5GB
 
@@ -117,15 +114,15 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is an evolution of LoRA:
 
 | Parameter | Value | Rationale |
 |-----------|-------|-----------|
-| Epochs | 100 | Enough for full convergence |
+| Epochs | 500 | Enough for full convergence |
 | Batch Size | 2 | Fits in 24GB VRAM |
 | Gradient Accumulation | 2 | Effective batch size of 4 |
-| Learning Rate | 3e-4 | Balanced for base model |
+| Learning Rate | 1e-4 | Balanced for base model |
 | Warmup Steps | 100 | Smooth learning rate ramp-up |
 | Optimizer | AdamW 8-bit | Saves ~30% VRAM |
 | Loss Weighting | min_snr | Stabilizes training on base models |
-| SNR Gamma | 5.0 | Controls weighting curve |
-| CFG Dropout | 0.15 | Prevents overfitting |
+| SNR Gamma | 7.0 | Controls weighting curve |
+| CFG Dropout | 0.25 | Prevents overfitting |
 | Checkpoint Every | 10 epochs | For recovery and analysis |
 
 ### 3.4 Infrastructure
@@ -251,7 +248,7 @@ Prompt: "tablastyle, fast tabla solo with energetic strokes"
 51 well-curated clips outperformed what 200 random clips would have achieved. Caption quality mattered more than quantity.
 
 ### Annotation Structure Matters
-The 5-descriptor framework produced consistent, usable captions. Free-form captions would have introduced too much noise.
+The 2-descriptor framework produced consistent, usable captions. Free-form captions would have introduced too much noise.
 
 ### DoRA > LoRA for Timbre
 DoRA's magnitude scaling helped capture the nuanced bayan/dayan distinction better than standard LoRA.

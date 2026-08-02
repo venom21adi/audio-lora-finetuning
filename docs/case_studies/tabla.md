@@ -1,4 +1,62 @@
 
+# Case Study: Tabla Fine-Tuning
+
+**Status:** Completed
+**Date:** August 2026
+**Model:** ACE-Step 1.5 (acestep-v15-base)
+**Instrument:** Tabla (classical Indian percussion)
+
+---
+
+## 1. Motivation
+
+ACE-Step 1.5 is a powerful 4B-parameter music generation model capable of producing commercial-grade audio across hundreds of instruments. However, like all foundation models, it struggles with **niche, underrepresented instruments** — including tabla.
+
+Tabla has a unique sonic signature:
+- **Bayan (left drum):** Deep, resonant bass tones with pitch bends
+- **Dayan (right drum):** Sharp, bright treble strokes with complex overtones
+- **Rhythmic complexity:** Intricate patterns (kaidas, relas, tihais)
+
+The foundation model produces "generic percussion" when prompted for tabla. The goal was to teach ACE-Step to generate **recognizable, stylistically accurate tabla** using limited data.
+
+---
+
+## 2. Data Curation
+
+### 2.1 Source Material
+- **Total raw audio:** 1.5 hours of tabla recordings
+- **Source quality:** High-quality WAV files, 44.1kHz, 16-bit
+- **Variety:** Includes different tempos, stroke types, and playing styles
+
+### 2.2 Clip Selection
+
+Rather than using all 1.5 hours, I selected **51 clips** of **30-45 seconds** each.
+
+**Selection criteria:**
+- Clean audio (no distortion, background noise minimal)
+- Representative variety (slow/fast, bass/treble-focused, simple/complex)
+- Consistent playing quality (no abrupt cuts or poor technique)
+
+**Why 30-45 seconds?**
+- Long enough for the model to learn phrase structure
+- Short enough to keep preprocessing efficient
+- Matches ACE-Step's training data distribution
+
+### 2.3 Annotation Framework
+
+I built a custom annotation tool that guided me through 5 descriptors for each clip:
+
+| Descriptor | Options | Why It Matters |
+|------------|---------|----------------|
+| **Tempo** | Very slow → Very fast | Controls generation speed and feel |
+| **Energy** | Calm → Intense | Affects dynamics and attack |
+| **Texture** | Bass-focused → Mixed → Complex | Maps to bayan/dayan balance |
+| **Stroke Type** | Bass → Treble → Mixed → Rolls | Defines playing technique |
+| **Complexity** | Simple → Virtuosic | Captures rhythmic intricacy |
+
+**Example annotation:**
+
+
 **Annotation tool features:**
 - Auto-plays each clip for consistent evaluation
 - Saves progress after every file (resumable)

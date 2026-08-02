@@ -12,7 +12,7 @@ With that in mind:
 
 - **51 clips (30–45 seconds each)** were sufficient for learning tabla.
 - **Clean, consistent audio** mattered more than volume.
-- **Diversity** (tempo, stroke types, complexity) was prioritized over repetition.
+- **Diversity** (tempo, energy) was prioritized over repetition.
 
 **Key takeaway:** A small, well-curated dataset outperforms a large, noisy one.
 
@@ -26,9 +26,7 @@ Free-form captions introduce inconsistency. Instead, I used a **structured frame
 |------------|---------|
 | **Tempo** | Controls generation speed |
 | **Energy** | Affects dynamics and intensity |
-| **Texture** | Maps to instrument-specific timbre (e.g., bayan/dayan balance) |
-| **Stroke Type** | Defines playing technique |
-| **Complexity** | Captures rhythmic intricacy |
+
 
 These descriptors were consistent across all 51 clips, ensuring the model learned a **structured representation** of tabla rather than random associations.
 
@@ -42,7 +40,7 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) adds magnitude scaling to standard 
 
 **DoRA parameters:**
 - Rank: 128
-- Alpha: 256
+- Alpha: 240
 - Trainable params: ~164M
 
 ### min_snr Loss Weighting
@@ -51,7 +49,7 @@ Base models are sensitive to noise. `min_snr` loss weighting stabilizes training
 
 ### CFG Dropout
 
-A 15% dropout during Classifier-Free Guidance prevents the model from becoming too dependent on the prompt, improving generalization and reducing artifacts.
+A 25% dropout during Classifier-Free Guidance prevents the model from becoming too dependent on the prompt, improving generalization and reducing artifacts.
 
 ---
 

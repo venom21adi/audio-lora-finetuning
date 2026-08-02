@@ -53,24 +53,8 @@ A 25% dropout during Classifier-Free Guidance prevents the model from becoming t
 
 ---
 
-## 4. Evaluation: Loss + Listening
 
-### Quantitative: Loss Curve
-
-Loss decreased from **0.5765 to 0.2173** (62.3% reduction). The curve was stable with no divergence.
-
-### Qualitative: Listening Tests
-
-The fine-tuned model produces:
-- Recognizable tabla timbre (bayan + dayan separation)
-- Authentic rhythmic phrasing
-- Consistent quality across prompts
-
-**The trigger word `tablastyle` is essential** — without it, the model defaults to generic percussion.
-
----
-
-## 5. Key Takeaways
+## 4. Key Takeaways
 
 1. **Data curation > data volume.** 51 good clips beat 500 average ones.
 2. **Structured annotation reduces noise.** Consistent descriptors produce cleaner learning.
@@ -80,7 +64,7 @@ The fine-tuned model produces:
 
 ---
 
-## 6. Applicability
+## 5. Applicability
 
 This methodology is not specific to tabla. It applies to any niche instrument where:
 - Limited data is available

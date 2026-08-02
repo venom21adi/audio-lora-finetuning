@@ -70,8 +70,8 @@ Key Visual Proof:
 > 💡 **Tip:** Download the files to your local machine for the best listening experience. 
 > The difference is most noticeable in the bayan (bass) and dayan (treble) separation.
 
-**All prompts used for evaluation can be found in [prompts.md](docs/case_studies/tabla/prompts.md). **
-** Rest of the files are at [Results](docs/case_studies/tabla/results) **
+**All prompts used for evaluation can be found in [prompts.md](docs/case_studies/tabla/prompts.md).**
+**Rest of the files are at [Results](docs/case_studies/tabla/results)**
 
 
 

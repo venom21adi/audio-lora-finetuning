@@ -62,25 +62,16 @@ Key Visual Proof:
 
 ## Sample Audio
 **Before (Base Model):**
-<audio controls>
-  <source src="docs/case_studies/tabla/results/prompt_1_sample_1_before.mp3" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-<audio controls>
-  <source src="docs/case_studies/tabla/results/prompt_1_sample_1_after.mp3" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-
 [▶️ Before Audio](docs/case_studies/tabla/results/prompt_1_sample_1_before.mp3)
 
 **After (Fine-Tuned):**
-[▶️ After Audio](docs/case_studies/tabla/results/prompt_1_sample_1_after.mp3)
+[▶️ After Audio](c/prompt_1_sample_1_after.mp3)
 
 > 💡 **Tip:** Download the files to your local machine for the best listening experience. 
 > The difference is most noticeable in the bayan (bass) and dayan (treble) separation.
 > The Prompts used can be found at [Prompts](docs/case_studies/tabla/prompts.md)
+> Rest of the files are at [Results](docs/case_studies/tabla/results)
+
 
 ## Technical Stack
 

@@ -19,6 +19,29 @@ This repository documents the methodology, infrastructure, and results of fine-t
 | Reproducibility | Documented pipeline + configs |
 | Resource constraints | Optimized for RTX 3090 (24GB) |
 
+🎵 Case Study: Tabla (Completed)
+We successfully fine-tuned ACE-Step 1.5 to generate recognizable tabla using a highly efficient approach.
+
+Data: 51 carefully curated clips (30-45s) from 1.5 hours of raw audio.
+
+Method: DoRA adapter (rank 128, alpha 240) with structured captions.
+
+Result: 62.3% loss reduction and clear timbre separation (bayan/dayan).
+
+Key Visual Proof:
+
+<table>
+  <tr>
+    <td><img src="results/tabla/images/spectrogram_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
+    <td><img src="results/tabla/images/spectrogram_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
+  </tr>
+</table>
+
+
+[Read the full Tabla Case Study →](docs/case_studies/tabla/tabla.md)
+
+
+
 ## Technical Stack
 
 - **Model:** ACE-Step 1.5 (4B DiT) — `acestep-v15-base`

@@ -200,7 +200,12 @@ Prompt: "tablastyle, fast tabla solo with energetic strokes"
 
 ### 4.3 Spectrogram Analysis
 
-[Placeholder: Before/After spectrograms]
+<table>
+  <tr>
+    <td><img src="docs/case_studies/tabla/results/spectrogram_before.png" alt="Before" width="300"/><br><em>Before (Base Model)</em></td>
+    <td><img src="docs/case_studies/tabla/results/spectrogram_after.png" alt="After" width="300"/><br><em>After (Fine-Tuned)</em></td>
+  </tr>
+</table>
 
 **Key differences:**
 - **Transient response:** Sharp attack peaks (tabla strokes)
@@ -216,33 +221,10 @@ Prompt: "tablastyle, fast tabla solo with energetic strokes"
 | "tablastyle, tabla solo with complex patterns" | Medium — some complexity, could improve |
 | "tablastyle, tabla with finger rolls and embellishments" | Good — rolls present, subtle |
 
----
-
-## 5. Technical Challenges & Solutions
-
-### Challenge 1: Infrastructure Setup
-**Problem:** UV installation hit disk quota errors on RunPod.  
-**Solution:** Set `UV_CACHE_DIR` and `TMPDIR` to `/workspace` to use the larger persistent volume.
-
-### Challenge 2: Missing Checkpoint Directory
-**Problem:** Side-Step couldn't find the base model.  
-**Solution:** The base model was missing from checkpoints directory. Downloaded via `hf download` and configured Side-Step's `checkpoint_dir` setting.
-
-### Challenge 3: Interactive vs CLI Mode
-**Problem:** Side-Step kept launching interactive mode instead of accepting CLI arguments.  
-**Solution:** Used the interactive wizard to set all parameters once, then used the generated `cli_command.txt` for reproducibility.
-
-### Challenge 4: Dataset Path Resolution
-**Problem:** Side-Step couldn't find audio files even when path was correct.  
-**Solution:** The `dataset.json` used relative paths (`section_001.wav`). Updated to `audio/section_001.wav` and pointed to the parent folder.
-
-### Challenge 5: Loss Curve Storage
-**Problem:** Training completed but session logs weren't saved.  
-**Solution:** For reproducibility, reconstructed training config from memory and will use a short retrain (5-10 epochs) to generate a clean loss curve for documentation.
 
 ---
 
-## 6. Lessons Learned
+## 5. Lessons Learned
 
 ### Data > Model
 51 well-curated clips outperformed what 200 random clips would have achieved. Caption quality mattered more than quantity.
@@ -264,7 +246,7 @@ Without `tablastyle`, the model defaulted to generic percussion. The trigger wor
 
 ---
 
-## 7. Future Work
+## 6. Future Work
 
 ### Same Methodology, New Instruments
 - Bansuri (flute) — currently in data collection
@@ -285,7 +267,7 @@ Without `tablastyle`, the model defaulted to generic percussion. The trigger wor
 
 ---
 
-## 8. Reproducibility
+## 7. Reproducibility
 
 All scripts and configurations are available in the main repository:
 
@@ -298,7 +280,7 @@ All scripts and configurations are available in the main repository:
 
 ---
 
-## 9. References
+## 8. References
 
 1. [ACE-Step 1.5 GitHub](https://github.com/ACE-Step/ACE-Step-1.5)
 2. [Side-Step GitHub](https://github.com/koda-dernet/Side-Step)

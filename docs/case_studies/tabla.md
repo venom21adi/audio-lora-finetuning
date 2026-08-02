@@ -330,6 +330,7 @@ All scripts and configurations are available in the main repository:
   "stroke_score": "Balanced mix of both drums",
   "complexity_score": "Moderate complexity"
 }
+```
 
 | Service | Cost |
 |--------|----------------|
